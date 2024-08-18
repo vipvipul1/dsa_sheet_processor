@@ -7,8 +7,7 @@ import java.io.InputStreamReader;
 
 public class DsaSheetProcessorApp {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        String path = reader.readLine();
+        String path = "/Users/vipulkumar/Library/CloudStorage/OneDrive-Personal/Documents/Scaler_Cloud/DSA_Bank.xlsx";
         CombineSheets combineSheets = new CombineSheets();
         combineSheets.mergeAllSheets(path);
     }
